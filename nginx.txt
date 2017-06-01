@@ -1,0 +1,22 @@
+
+server {
+	location / {
+	listen       80;
+	server_name got.com www.got.com;
+	root /home/anurag/sites/got-app;
+	}
+	
+	error_page 404 /404.html;
+ 
+	location = /404.html {
+ 	root /home/anurag/sites/got;
+	internal;
+}	
+	error_page 500 501 502 503 504 /50x.html;
+
+	location = /50x.html {
+	root /home/anurag/sites/got;
+	internal;
+
+	}
+}
