@@ -3,7 +3,7 @@ server {
 	location / {
 	listen       80;
 	server_name got.com www.got.com;
-	root /home/anurag/sites/got-app;
+	root /home/anurag/sites/got;
 	}
 	
 	error_page 404 /404.html;
